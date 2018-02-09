@@ -1,0 +1,232 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../images/backgroundImage.jpg");
+
+	
+}
+p{
+	margin-top: 20px;
+	font-size: 10px;
+}
+
+.logo{
+	width: 30%;
+}
+
+
+.header{
+	text-align: center;
+	background-color: #f2f2f2;
+	padding: 30px;
+}
+
+.row{
+	text-align: center;
+	background-color:transparent; ;
+	/*border:5px solid #f2f2f2;*/
+}
+
+.reel{
+	margin:0px ;
+	min-width:200px; 
+	min-height: 200px;
+	background-color: white;
+	padding: 30px;
+	border:10px solid #f2f2f2;
+	display: inline-block;
+}
+
+
+
+.reelImg{
+	width:140px; 
+	height: 140px;
+
+}
+
+.textArea{
+	text-align: center;
+	padding: 35PX;
+}
+.tfMessage{
+	font-size: 30px;
+	height: 30px;
+
+}
+
+.tfBets{
+
+	font-size: 33px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	min-height: 70px;
+	width: 170px;
+	background-color: red;
+	border: 5px solid #c60000;
+	border-radius:30px;
+}
+
+.tfCredits{
+	font-size: 33px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+
+	min-height: 70px;
+	width: 170px;
+	background-color: #a5ff00;
+	border: none;
+	border: 5px solid #84e200;;
+	border-radius:30px;
+
+}
+
+.tfWon{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+
+	min-height: 40px;
+	width: 120px;
+	background-color: #a5ff00;
+	border: none;
+	border: 5px solid #84e200;;
+	border-radius:30px;
+	margin-right: 30px;
+
+}
+
+.tfLost{
+
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	min-height: 40px;
+	width: 120px;
+	background-color: red;
+	border: 5px solid #c60000;
+	border-radius:30px;
+	margin-right: 30px;
+}
+
+.tfNet{
+
+
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	min-height: 40px;
+	width: 120px;
+	background-color:#ffea2d;
+	border: 5px solid #ffc32d;
+	border-radius:30px;
+	margin-right: 30px;
+
+}
+/*
+styling buttons*/
+.spinBtn{
+	background-color: #ffff00;
+	border-radius: 100%;
+	padding: 20px;
+	font-size:20px;
+	height: 190px;
+	width: 190px;
+	border: 20px solid #f2f2f2;
+
+
+}
+
+.spinBtn:hover{
+	background-color:black;
+	color:white ;
+}
+
+
+.btnCommon{
+	background-color: #ffff00;
+	border-radius: 80px;
+	padding: 20px;
+	font-size:20px;
+	height: 90px;
+	width: 130px;
+	border: 8px solid #f2f2f2;
+	margin-top: 50px;
+
+}
+
+.msgSucess{
+	display: none;
+	color: chartreuse;
+	font-size: 20px;
+
+}
+
+.btnCommon:hover{
+	background-color: black;
+	color: white;
+
+}
+
+.btnSave{
+	background-color: #ffff00;
+	border-radius: 80px;
+	padding: 20px;
+	font-size:16px;
+	height:auto;
+	width: auto;
+	border: 8px solid #f2f2f2;
+	margin-top: 50px;
+}
+.btnSave:hover{
+	background-color: black;
+	color: white;
+
+}
+
+
+
+/*stying for the pop up box*/
+
+
+.statsContainer {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+.statsContent {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+

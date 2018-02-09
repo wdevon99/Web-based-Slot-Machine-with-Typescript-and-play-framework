@@ -1,0 +1,158 @@
+@(message: String, style: String = "java")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+    <div class="container-fluid"> <!-- This is the main container  -->
+        <!-- START OF HEADER  -->
+        <div class="row header"> <!-- This row contains the header  -->
+            <div class="col-sm-12">
+                <div class="">
+                    <img class="logo" src="@routes.Assets.versioned("images/logo.png")" >
+                    <p>( Web application using play framework/ Typescript/ NoSQL )</p>
+                </div>
+            </div>
+        </div>
+            <!-- END OF HEADER  -->
+            <!-- START OF REELS AREA  -->
+        <div class="row"> <!-- This row contains the three reels  -->
+            <div class="col-lg-3" >
+                <p> </p>
+            </div>
+
+            <div class="col-lg-2" >
+                <div class="reel"  >
+
+                    <img  class="reelImg"  id="reel1HtmlObj" src="@routes.Assets.versioned("images/redseven.png")" >
+                </div>
+            </div>
+
+            <div class="col-lg-2" >
+                <div class="reel" >
+                    <img class="reelImg"  id="reel2HtmlObj" src="@routes.Assets.versioned("images/redseven.png")">
+                </div>
+            </div>
+
+            <div class="col-lg-2" >
+                <div class="reel" >
+                    <img class="reelImg"  id="reel3HtmlObj" src="@routes.Assets.versioned("images/redseven.png")">
+                </div>
+            </div>
+
+            <div class="col-lg-3" >
+                <p> </p>
+            </div>
+        </div>
+            <!-- END OF REELS AREA  -->
+            <!-- START OF TEXT FILED'S AND MESSAGE AREA ROW (CREDIT AREA AND BET AREA AND A MESSAGE AREA)  -->
+        <div class="row">
+
+            <div class="col-lg-3" >
+                <p> <p>  <!-- empty column  -->
+            </div>
+            <div class="col-lg-2" >
+                <div class="textArea" >
+                    BETS:
+                    <input class="tfBets" type="text" name="tfBets" disabled="true" id="tfBets" value="0">
+                </div>
+            </div>
+            <div class="col-lg-2" >
+                <div class="textArea" >
+                    <p class="tfMessage" id="tfMessage"> WELCOME </p>
+                </div>
+            </div>
+            <div class="col-lg-2" >
+                <div class="textArea" >
+                    CREDITS:
+                    <input class="tfCredits" type="text" name="tfCredits" disabled="true" id="tfCredits" value="10">
+                </div>
+            </div>
+            <div class="col-lg-3" >
+                <p> </p> <!-- empty column  -->
+            </div>
+        </div>
+            <!-- END OF TEXT FILED'S AND MESSAGE AREA ROW (CREDIT AREA AND BET AREA AND A MESSAGE AREA)  -->
+            <!-- START OF SPIN BUTTON ROW -->
+        <div class="row">
+            <div class="col-lg-3" >
+                <p> </p> <!-- empty column  -->
+            </div>
+            <div class="col-lg-2" >
+                <input class ="btnCommon" type="button" name="btnBetOne" value="Bet One" id="btnBetOne">
+            </div>
+            <div class="col-lg-2" >
+                    <!-- SPIN BUTTON  -->
+                <div class="" >
+                    <input class="spinBtn" id="btnSpin" type="button" name="btnSpin" value="SPIN" >
+                </div>
+            </div>
+
+            <div class="col-lg-2" >
+                <input class ="btnCommon" type="button" name="btnBetMax" value="Bet Max" id="btnBetMax">
+            </div>
+
+
+            <div class="col-lg-3" >
+                <p> </p> <!-- empty column  -->
+            </div>
+
+        </div>
+            <!-- END OF SPIN BUTTON ROW -->
+            <!-- START OF OTHER BUTTONS AREA -->
+        <div class="row">
+            <div class="col-lg-3" >
+                <p></p>
+            </div>
+            <div class="col-lg-2" >
+                <input class ="btnCommon" type="button" name="btnAddCoin" value="Add Coin" id="btnAddCoin">
+            </div>
+            <div class="col-lg-2" >
+                <input class ="btnCommon" type="button" name="btnReset" value="Reset" id="btnReset">
+            </div>
+            <div class="col-lg-2" >
+                <input class ="btnCommon" type="button" name="btnStatistics" value="Statistics" id="btnStatistics">
+            </div>
+            <div class="col-lg-3" >
+                <p></p>
+            </div>
+        </div>
+            <!-- END OF OTHER BUTTONS AREA -->
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyrights 2017 - Devon Wijesinghe</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- STATISTICS POP UP BOX -->
+
+    <div id="statsContainer" class="statsContainer">
+
+
+        <div class="statsContent">
+            <span id="close" class="close">&times;</span>
+            <center>
+                <h1>Statistics</h1>
+
+                <div id="piechart"> Pie chart </div>
+
+                Number of Games won
+                <input class="tfWon" type="text" name="tfWon" disabled="true" id="tfWon" value="0">
+                Number of Games lost
+                <input class="tfLost" type="text" name="tfLost" disabled="true" id="tfLost" value="0">
+                <br>
+                <br>
+                <br>
+                Number of credit netted per game
+                <input class="tfNet" type="text" name="tfNet" disabled="true" id="tfNet" value="0">
+                <br>
+                <input class ="btnSave" type="button" name="btnSave" value="Save stats to Firebase" id="btnSave">
+
+                <p class="msgSucess" id="msgSucess">	✅ Sucessfully saved statistics to firebase!</p>
+            </center>
+
+        </div>
+
+    </div>
+    <!-- END -->
+}
